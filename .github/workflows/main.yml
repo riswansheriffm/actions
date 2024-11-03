@@ -18,7 +18,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: ./workspace/package-lock.json
     - run: npm ci
     # - run: npm test
     # - run: pm2 start server.js --name=lynks-engine

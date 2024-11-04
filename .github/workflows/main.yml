@@ -33,7 +33,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    #if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
@@ -44,6 +44,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: ./build
+       # with:
+         # github_token: ${{ secrets.TOKEN }}
+          #publish_dir: ./build

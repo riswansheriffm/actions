@@ -27,5 +27,5 @@ class App extends Component {
     );
   }
 }
-
+App.listen(3000)
 export default App;

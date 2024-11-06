@@ -22,4 +22,4 @@ jobs:
     # - run: npm test
     # - run: pm2 start server.js --name=lynks-engine
     - run: npm run build
-    - run: npm restart
+    - run: npm start

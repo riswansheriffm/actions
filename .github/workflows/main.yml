@@ -23,3 +23,4 @@ jobs:
     # - run: pm2 start server.js --name=lynks-engine
     - run: npm run build
     # - run: npm restart
+    -  run:  sudo pm2 restart app
